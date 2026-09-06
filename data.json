@@ -1,16 +1,3 @@
 {
-  "nom": "Nom Prénom",
-  "titre": "Développeur & Créatif",
-  "description": "Bonjour !",
-  "couleur_boutons": "#4299e1",
-  "liens": [
-    {
-      "nom": "Mon GitHub",
-      "url": "https://github.com"
-    },
-    {
-      "nom": "Me contacter",
-      "url": "mailto:contact@exemple.com"
-    }
-  ]
+  "AboutMe": "bla bla bla bla"
 }
