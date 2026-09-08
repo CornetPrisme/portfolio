@@ -37,6 +37,18 @@ p {
     opacity: 0;
 }
 
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 4vh 0 4vh 0;
+}
+
+#AboutMe {
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -48,18 +60,11 @@ p {
     }
 }
 
-@media (min-width: 700px) {
-    .navbar {
-        display: flex;
-    }
-    #home {
-        display: none;
-    }
-}
-
-@media (min-width: 1300px) {
+@media (min-width: 880px) {
     .navbar {
         position: fixed;
+        top: 0;
+        z-index: 1000;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -76,6 +81,14 @@ p {
         text-transform: uppercase;
         letter-spacing: 1.5px;
         text-decoration: none;
+    }
+
+    .about {
+        margin-top: 60px;
+    }
+
+    .about, .projects, .links, .contact {
+        scroll-margin-top: 60px; 
     }
 
     .navbar a:hover {
