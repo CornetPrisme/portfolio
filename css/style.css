@@ -13,6 +13,12 @@ p {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 .navbar {
     display: none;
 }
@@ -38,10 +44,12 @@ p {
 }
 
 h1 {
-    color: white;
+    color: #a9adc1;
     display: flex;
     justify-content: center;
     margin: 4vh 0 4vh 0;
+    text-transform: uppercase;
+
 }
 
 #AboutMe {
@@ -51,20 +59,43 @@ h1 {
 
 .icon {
     max-width: 100px;
+    width: 10vw;
 }
 
-.link-container {
+.link-container, .contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1vh;
 }
 
 .links{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    gap: 3vw;
+
 }
 
+.projects img {
+    width: 30vw;
+    max-height: 40vw;
+    height: auto;
+}
+
+.projects {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5vw;
+    flex-wrap: wrap
+}
+
+.projects p {
+    padding: 0 3vw 0 3vw;
+    max-width: 30vw;
+}
 
 @keyframes fadeInUp {
     from {
@@ -100,11 +131,11 @@ h1 {
         text-decoration: none;
     }
 
-    .about {
+    #title-about-me {
         margin-top: 60px;
     }
 
-    .about, .projects, .links, .contact {
+    #title-about-me.about, .about, .projects, .links, .contact {
         scroll-margin-top: 60px; 
     }
 
@@ -115,4 +146,8 @@ h1 {
     #home {
         display: none;
     }
+
+    .icon {
+    width: 5vw;
+}
 }
