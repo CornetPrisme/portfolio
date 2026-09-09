@@ -11,6 +11,7 @@ body {
 
 p {
     color: white;
+    font-family: arial;
 }
 
 a {
@@ -44,7 +45,10 @@ a {
 }
 
 h1 {
-    color: #a9adc1;
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     display: flex;
     justify-content: center;
     margin: 4vh 0 4vh 0;
@@ -78,8 +82,8 @@ h1 {
 }
 
 .projects img {
-    width: 30vw;
-    max-height: 40vw;
+    width: 70vw;
+    max-height: 40vh;
     height: auto;
 }
 
@@ -94,7 +98,23 @@ h1 {
 
 .projects p {
     padding: 0 3vw 0 3vw;
-    max-width: 30vw;
+    max-width: 80vw;
+    }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    gap: 5px;
+    background-color: #272831
+}
+
+.contact {
+    margin-bottom: 2vw;
 }
 
 @keyframes fadeInUp {
@@ -108,7 +128,32 @@ h1 {
     }
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  font-size: 30px;
+  color: #38bdf8;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, -20px);
+  }
+  60% {
+    transform: translate(-50%, -10px);
+  }
+}
+
 @media (min-width: 880px) {
+    h1 {
+        color: #a9adc1;
+    }
+
     .navbar {
         position: fixed;
         top: 0;
@@ -131,7 +176,7 @@ h1 {
         text-decoration: none;
     }
 
-    #title-about-me {
+    #about {
         margin-top: 60px;
     }
 
@@ -149,5 +194,16 @@ h1 {
 
     .icon {
     width: 5vw;
-}
+    }
+
+    .projects p {
+    padding: 0 3vw 0 3vw;
+    max-width: 30vw;
+    }
+
+    .projects img {
+    width: 30vw;
+    max-height: 40vh;
+    height: auto;
+    }
 }

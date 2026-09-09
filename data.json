@@ -1,34 +1,35 @@
 {
   "profil": {
-    "AboutMe": "bla bla bla bla"
+    "AboutMe": "bla bla bla bla",
+    "resume": "https://vblain.fr"
   },
 
   "projets": [
     {
-      "title": "Projet 1 : Site vitrine",
-      "description": "Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.Création d'un site web complet avec lien vers le résultat.",
-      "imageSrc": "img/python2.webp",
+      "title": "Development of an Emotionally Intelligent AI Customer Assistance Chatbot (HumaniChat)",
+      "description": "Drawing from the human-robot interaction of the image, this project involved designing and coding an AI customer service agent. Utilizing advanced Natural Language Processing (NLP) technologies, the chatbot was trained to detect emotional tones and adapt its responses to provide more empathetic and human-like support on e-commerce websites.",
+      "imageSrc": "img/img1.webp",
       "imageAlt": "Aperçu du projet 1",
       "lien": "https://vblain.fr"
     },
     {
-      "title": "Projet 2 : Script Python",
-      "description": "Un projet interne sans lien externe. L'image n'est donc pas cliquable.",
-      "imageSrc": "img/python.webp",
-      "imageAlt": "Aperçu du projet 2",
+      "title": "Full-Stack Development of an Agile Team Collaboration Platform",
+      "description": "Inspired by the collaborative work environment of the image, this project involves creating a real-time project management web application for development teams. The app integrates task tracking dashboards, built-in messaging, and a virtual pair-coding system to optimize the workflow of remote developers.",
+      "imageSrc": "img/img2.webp",
+      "imageAlt": "Full-Stack Development of an Agile Team Collaboration Platform",
+      "lien": ""
+    },
+    {
+      "title": "Predictive Maintenance System for Mobile Industrial Robot Fleets (RoboTrace)",
+      "description": "This project presents a software solution for tracking and maintaining industrial service robots (like the one pictured). By integrating IoT sensors with an analytical data dashboard, the system utilizes machine learning algorithms to predict hardware failures before they occur, optimizing uptime for factory automation.",
+      "imageSrc": "img/img4.webp",
+      "imageAlt": "Predictive Maintenance System for Mobile Industrial Robot Fleets (RoboTrace)",
       "lien": ""
     },
     {
       "title": "Projet 2 : Script Python",
       "description": "Un projet interne sans lien externe. L'image n'est donc pas cliquable.",
-      "imageSrc": "img/python.webp",
-      "imageAlt": "Aperçu du projet 2",
-      "lien": ""
-    },
-    {
-      "title": "Projet 2 : Script Python",
-      "description": "Un projet interne sans lien externe. L'image n'est donc pas cliquable.",
-      "imageSrc": "img/python2.webp",
+      "imageSrc": "img/img3.webp",
       "imageAlt": "Aperçu du projet 2",
       "lien": ""
     }

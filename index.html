@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,26 @@
 </head>
 <body>
     <div class="navbar">
-        <a id="navbar-home" href="index.html">Home</a>
+        <a id="navbar-home" href="#home">Home</a>
         <a id="navbar-about" href="#about">About Me</a>
         <a id="navbar-projects" href="#projects">Projects</a>
-        <a id="navbar-resume" href="">Resume</a>
+        <a id="navbar-resume" href="" target="_blank">Resume</a>
         <a id="navbar-links" href="#links">Professional Links</a>
         <a id="navbar-contact" href="#contact">Contact</a>
     </div>
     <div id="home">
         <p>Welcome</p>
+        <div class="scroll-indicator">
+            &#x25BC;
+        </div>
     </div>
-    <h1 id="title-about-me">About me</h1>
+    <h1 id="about">About me</h1>
     <div class="about">
         <p id="AboutMe"></p>
     </div>
-    <h1>My projects</h1>
+    <h1 id="projects">My projects</h1>
     <div class="projects"></div>
-    <h1>My links</h1>
+    <h1 id="links">My links</h1>
     <div class="links">
         <div class="link-container">
         <a id="link-github-icon" href=""><img class="icon" id="img-github" src="svg/github.svg" alt=""></a>
@@ -35,10 +38,14 @@
         <a id="link-linkedin-text" href=""></a>
         </div>
     </div>
-    <h1>My contact</h1>
+    <h1 id="contact">My contact</h1>
     <div class="contact">
         <a id="link-email-icon" href=""><img class="icon" id="img-email" src="svg/email.svg" alt=""></a>
         <a id="link-email-text" href=""></a>
+    </div>
+    <div class="footer">
+        <p>Created by</p>
+        <a href="https://vblain.fr"> Victor Blain</a>
     </div>
     <script src="js/text_script.js"></script>
 </body>

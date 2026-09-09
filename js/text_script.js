@@ -8,6 +8,7 @@ fetch('data.json')
     .then(data => {
         // Handle your data here
         document.getElementById('AboutMe').textContent = data.profil.AboutMe;
+        document.getElementById('navbar-resume').href = data.profil.resume;
 
         // Github
         document.getElementById('img-github').alt = data.reseaux.github.imgAlt;
