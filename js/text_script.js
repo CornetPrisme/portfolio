@@ -40,9 +40,26 @@ fetch('data.json')
             imgElement.src = projet.imageSrc;
             imgElement.alt = projet.imageAlt;
             imgElement.classList.add('project-image');
-
+            
             const hasLink = projet.lien && projet.lien.trim() !== "";
 
+            if (projet.title) {
+                const titleElement = document.createElement('h3');
+                
+                if (hasLink) {
+                    const titleLink = document.createElement('a');
+                    titleLink.href = projet.lien;
+                    titleLink.target = "_blank";
+                    titleLink.textContent = projet.title;
+                    titleLink.classList.add('project-title-link');
+                    titleElement.appendChild(titleLink);
+                } else {
+                    titleElement.textContent = projet.title;
+                }
+                
+                projectContainer.appendChild(titleElement);
+            }
+            
             if (hasLink) {
                 const linkElement = document.createElement('a');
                 linkElement.href = projet.lien;
@@ -51,23 +68,6 @@ fetch('data.json')
                 projectContainer.appendChild(linkElement);
             } else {
                 projectContainer.appendChild(imgElement);
-            }
-
-            if (projet.titre) {
-                const titleElement = document.createElement('h3');
-                
-                if (hasLink) {
-                    const titleLink = document.createElement('a');
-                    titleLink.href = projet.lien;
-                    titleLink.target = "_blank";
-                    titleLink.textContent = projet.titre;
-                    titleLink.classList.add('project-title-link');
-                    titleElement.appendChild(titleLink);
-                } else {
-                    titleElement.textContent = projet.titre;
-                }
-                
-                projectContainer.appendChild(titleElement);
             }
 
             const textElement = document.createElement('p');
